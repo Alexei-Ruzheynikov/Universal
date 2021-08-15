@@ -1,0 +1,87 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .info
+        &-menu
+            &__item:not(:last-child)
+                margin-right: 14px
+@media (max-width: 992px)
+    .container
+        max-width: 700px
+    .button
+        &__line
+            width: 22px
+            height: 2px
+            background-color: #fff
+    .info
+        &__button
+            display: none
+        &-menu
+            display: none
+            &__item
+                &_mobile
+                    &-visible
+                        margin-bottom: 15px
+            &_mobile
+                background-color: #262D33
+                position: fixed
+                left: 0
+                right: 0
+                bottom: 0
+                top: 0
+                top: 46px
+                &-visible
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-start
+                    align-items: center
+                    margin-top: 15px
+                    margin-bottom: 15px
+            &__button
+                &_mobile
+                    &-visible
+                        display: block
+                        margin-left: 0
+                        padding: 9px 65px 8px 63px
+                        margin-top: 11px
+                        font-family: Lato, sans-serif
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 20px
+                        color: $light
+                        background: #656B70
+                        border-radius: 10px
+                        text-transform: uppercase
+        &__button
+            display: none
+    .navbar
+        &_fixed
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            z-index: 99
+        &__button
+            width: 22px
+            height: 18px
+            padding: 0
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            bottom: none
+            background-color: #262D33
+        
+@media (max-width: 767px)
+    .container
+        max-width: 767px
+        width: 92%
+@media (max-width: 576px)
+    .container
+        max-width: 480px
+        width: 92%
+@media (max-width: 480px)
+    .container
+        max-width: 280px
+        width: 100%
