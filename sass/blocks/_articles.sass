@@ -1,0 +1,184 @@
+.articles
+    &-choice
+        max-width: 263px
+        cursor: pointer
+        &__info:nth-child(2)
+            .articles-choice__subtitle
+                color: #3BBDC4
+        &__info:nth-child(3)
+            .articles-choice__subtitle
+                color: #6E99AE
+        &__info:nth-child(4)
+            .articles-choice__subtitle
+                color: #AC8EE3
+        &__info:nth-child(5)
+            .articles-choice__subtitle
+                color: #FFA34D
+        &__info:nth-child(6)
+            .articles-choice__subtitle
+                color: #3BBDC4
+        &__title
+            text-transform: uppercase
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: #262D33
+            letter-spacing: 0.5px
+            display: flex
+            // align-items: center
+            // justify-content: center
+            padding: 20px
+            padding-left: 25px
+            padding-right: 10px
+            background-color: #f1f1f1
+        &__subtitle
+            padding: 18px 25px 8px 25px
+            border-top: 1px solid #F5F5F5
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            
+        &__text
+            padding-right: 25px
+            padding-left: 25px
+            padding-bottom: 19px
+            margin: 0px
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+    &-wrap
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        margin-top: 24px
+        min-width: 570px
+        &__button
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: $light
+            position: absolute
+            bottom: 103px
+            left: 55px
+            background-color: #4592FF
+            border-radius: 20px
+            padding: 6px 28px 10px 19px
+            z-index: 14
+            &_icon
+                fill: $light
+                width: 20px
+                height: 20px
+                z-index: 21
+                position: relative
+                top: 5px
+                left: 8px
+    &__paper
+        // position: absolute
+        display: none
+        
+        &_active
+            display: block
+        &-wrap
+            position: relative
+            // background-image: url(../img/articles-1.png)
+            // &::after
+            //     content: ''
+            //     background-color: rgba(64, 48, 61, 0.35);
+            //     z-index: 10
+            //     width: 100%
+            //     height: 570px
+            //     // max-height: 877px
+            //     display: block
+            //     position: absolute
+            //     top: 0
+    &-image
+        max-height: 877px
+        min-width: 570px
+        position: relative
+        top: 0
+        z-index: 0 
+        &::after
+            content: ''
+            background-color: rgba(64, 48, 61, 0.35);
+            z-index: 10
+            width: 100%
+            height: 570px 
+            // max-height: 877px
+            display: block
+            position: absolute
+            top: 0
+        &__img
+            height: 100%
+            width: 100%
+            object-fit: cover
+            // background-color: #40303D
+            
+            // opacity: 0.15
+            z-index: 10
+            // z-index: 6
+            
+    &-meta
+        text-transform: uppercase
+        position: absolute
+        top: 245px
+        left: 55px
+        z-index: 5
+        color: #4592FF
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        z-index: 11
+    &-title
+        // text-transform: uppercase
+        color: $light
+        position: absolute
+        bottom: 192px
+        left: 55px
+        font-family: Roboto Slab
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        z-index: 11
+
+    &-avatar      
+        position: absolute
+        top: 55px
+        left: 55px
+        z-index: 12
+        display: flex
+        &__info
+            color: $light
+            margin-left: 10px
+            margin-top: 4px
+
+        &__title
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            opacity: 0.85
+
+        &__subtotle
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.4
+
+    

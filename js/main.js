@@ -40,4 +40,14 @@ $(document).ready(function () {
   menuButtonLink.on("click", function () {
     $(".info-menu_mobile").toggleClass("info-menu_mobile-visible");
   });
+
+  var tabsItem = $(".articles-choice__info");
+  var contentItem = $(".articles__paper");
+  tabsItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass("articles-choice__info_active");
+    contentItem.removeClass("articles__paper_active");
+    $(activeContent).addClass("articles__paper_active");
+    $(this).addClass("articles-choice__info_active");
+  });
 });

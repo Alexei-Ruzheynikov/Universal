@@ -5,6 +5,9 @@
         &-menu
             &__item:not(:last-child)
                 margin-right: 14px
+    .articles
+        &-image
+            height: 570px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -13,9 +16,12 @@
             width: 22px
             height: 2px
             background-color: #fff
-    .info
-        &__button
+    .button
+        &_info
             display: none
+    .info
+        // &__button
+        //     display: none
         &-menu
             display: none
             &__item
@@ -72,16 +78,74 @@
             flex-direction: column
             bottom: none
             background-color: #262D33
-        
+    .articles
+        margin-top: 60px
+        &-wrap
+            flex-direction: column
+            margin-top: 90px
+        &-choice
+            display: flex
+            justify-content: space-between
+            &__info
+                min-width: 130px
+            &__title
+                display: none
+            &__text
+                padding-left: 10px
+                padding-right: 10px
+            &__subtitle
+                padding-left: 10px
+                padding-right: 10px
+            
 @media (max-width: 767px)
     .container
         max-width: 767px
         width: 92%
+        overflow-x: hidden
+
+    .articles
+        &-wrap
+            margin-top: 30px
+        &-image
+
+        &-choice
+            &__info
+                min-width: 100px
 @media (max-width: 576px)
     .container
         max-width: 480px
         width: 92%
+    .articles
+        &-title
+            font-size: 35px
+            line-height: 45px
+        &-choice
+            &__info:nth-child(6)
+                display: none
 @media (max-width: 480px)
     .container
         max-width: 280px
         width: 100%
+    .articles
+        &-choice
+            &__info:nth-child(5)
+                display: none
+        &-image
+            height: 460px
+            &:after
+                height: 460px
+        &-avatar
+            top: 30px
+            left: 25px
+        &-title
+            font-size: 22px
+            line-height: 30px
+            left: 25px
+            bottom: 230px
+        &-meta
+            top: 145px
+            left: 25px
+        &-wrap
+            &__button
+                bottom: 88px
+                left: 25px

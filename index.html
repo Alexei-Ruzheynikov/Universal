@@ -7,12 +7,19 @@
     <title>Universal</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -47,7 +54,7 @@
               </li>
             </ul>
           </div>
-          <button class="button info__button">Оставить заявку</button>
+          <button class="button button_info">Оставить заявку</button>
 
           <button class="button navbar__button">
             <span class="button__line"></span>
@@ -90,18 +97,247 @@
         </div>
       </div>
     </header>
-    <section id="id1" style="margin-bottom: 1000px; margin-top: 60px">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet
-      sapiente culpa enim! Cumque, ut itaque. Mollitia eos quia illum placeat
-      officia ipsam vel veritatis exercitationem alias tenetur. Quae optio
-      exercitationem omnis facere itaque quas corporis tempore voluptatum
-      eveniet? Fugit quo sequi recusandae voluptas officiis totam quia et!
-      Blanditiis laboriosam voluptatem sapiente impedit voluptatum molestias a
-      molestiae suscipit culpa sint cumque quibusdam veniam labore odio nostrum
-      cupiditate animi velit dolore, inventore quam architecto repellat?
-      Repudiandae esse non sed incidunt amet hic est fuga odit cumque
-      dignissimos et quo accusantium alias sequi, debitis animi tempora ullam
-      quibusdam aliquid, voluptatibus sit doloribus.
+
+    <section id="id1" class="articles" style="margin-bottom: 1000px">
+      <div class="container">
+        <div class="articles-wrap">
+          <div class="articles__paper articles__paper_active">
+            <div class="articles__paper-wrap">
+              <div class="articles-image">
+                <img
+                  src="img/articles-1.png"
+                  class="articles-image__img"
+                  alt=""
+                />
+              </div>
+              <div class="articles-avatar">
+                <img
+                  src="img/avatar.png"
+                  class="articles-avatar__image_img"
+                  alt=""
+                />
+                <div class="articles-avatar__info">
+                  <div class="articles-avatar__title">Давид Гуров</div>
+                  <div class="articles-avatar__subtotle">Разработчик</div>
+                </div>
+              </div>
+              <div class="articles-meta">Javascript</div>
+              <div class="articles-title">
+                Расширение Chrome<br />
+                защищает от атак
+              </div>
+              <button class="button articles-wrap__button">
+                Читать далее
+                <svg class="articles-wrap__button_icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="one-tab" class="articles__paper">
+            <div class="articles__paper-wrap">
+              <div class="articles-image">
+                <img
+                  src="img/articles-1.png"
+                  class="articles-image__img"
+                  alt=""
+                />
+              </div>
+              <div class="articles-avatar">
+                <img
+                  src="img/avatar.png"
+                  class="articles-avatar__image_img"
+                  alt=""
+                />
+                <div class="articles-avatar__info">
+                  <div class="articles-avatar__title">Давид Гуров1</div>
+                  <div class="articles-avatar__subtotle">Разработчик1</div>
+                </div>
+              </div>
+              <div class="articles-meta">Javascript1</div>
+              <div class="articles-title">
+                Расширение Chrome<br />
+                защищает от атак1
+              </div>
+              <button class="button articles-wrap__button">
+                Читать далее
+                <svg class="articles-wrap__button_icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="two-tab" class="articles__paper">
+            <div class="articles__paper-wrap">
+              <div class="articles-image">
+                <img
+                  src="img/articles-1.png"
+                  class="articles-image__img"
+                  alt=""
+                />
+              </div>
+              <div class="articles-avatar">
+                <img
+                  src="img/avatar.png"
+                  class="articles-avatar__image_img"
+                  alt=""
+                />
+                <div class="articles-avatar__info">
+                  <div class="articles-avatar__title">Давид Гуров2</div>
+                  <div class="articles-avatar__subtotle">Разработчик2</div>
+                </div>
+              </div>
+              <div class="articles-meta">Javascript2</div>
+              <div class="articles-title">
+                Расширение Chrome<br />
+                защищает от атак2
+              </div>
+              <button class="button articles-wrap__button">
+                Читать далее2
+                <svg class="articles-wrap__button_icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="three-tab" class="articles__paper">
+            <div class="articles__paper-wrap">
+              <div class="articles-image">
+                <img
+                  src="img/articles-1.png"
+                  class="articles-image__img"
+                  alt=""
+                />
+              </div>
+              <div class="articles-avatar">
+                <img
+                  src="img/avatar.png"
+                  class="articles-avatar__image_img"
+                  alt=""
+                />
+                <div class="articles-avatar__info">
+                  <div class="articles-avatar__title">Давид Гуров3</div>
+                  <div class="articles-avatar__subtotle">Разработчик3</div>
+                </div>
+              </div>
+              <div class="articles-meta">Javascript3</div>
+              <div class="articles-title">
+                Расширение Chrome<br />
+                защищает от атак3
+              </div>
+              <button class="button articles-wrap__button">
+                Читать далее3
+                <svg class="articles-wrap__button_icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="four-tab" class="articles__paper">
+            <div class="articles__paper-wrap">
+              <div class="articles-image">
+                <img
+                  src="img/articles-1.png"
+                  class="articles-image__img"
+                  alt=""
+                />
+              </div>
+              <div class="articles-avatar">
+                <img
+                  src="img/avatar.png"
+                  class="articles-avatar__image_img"
+                  alt=""
+                />
+                <div class="articles-avatar__info">
+                  <div class="articles-avatar__title">Давид Гуров4</div>
+                  <div class="articles-avatar__subtotle">Разработчик4</div>
+                </div>
+              </div>
+              <div class="articles-meta">Javascript4</div>
+              <div class="articles-title">
+                Расширение Chrome<br />
+                защищает от атак4
+              </div>
+              <button class="button articles-wrap__button">
+                Читать далее4
+                <svg class="articles-wrap__button_icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="five-tab" class="articles__paper">
+            <div class="articles__paper-wrap">
+              <div class="articles-image">
+                <img
+                  src="img/articles-1.png"
+                  class="articles-image__img"
+                  alt=""
+                />
+              </div>
+              <div class="articles-avatar">
+                <img
+                  src="img/avatar.png"
+                  class="articles-avatar__image_img"
+                  alt=""
+                />
+                <div class="articles-avatar__info">
+                  <div class="articles-avatar__title">Давид Гуров5</div>
+                  <div class="articles-avatar__subtotle">Разработчик5</div>
+                </div>
+              </div>
+              <div class="articles-meta">Javascript5</div>
+              <div class="articles-title">
+                Расширение Chrome<br />
+                защищает от атак5
+              </div>
+              <button class="button articles-wrap__button">
+                Читать далее5
+                <svg class="articles-wrap__button_icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="articles-choice">
+            <div class="articles-choice__title">Рекомендуем</div>
+            <div
+              data-target="#one-tab"
+              class="articles-choice__info articles-choice__info_active"
+            >
+              <div class="articles-choice__subtitle">css</div>
+              <p class="articles-choice__text">
+                Как использовать CSS float после того, как вышел Flexbox
+              </p>
+            </div>
+
+            <div data-target="#two-tab" class="articles-choice__info">
+              <div class="articles-choice__subtitle">Javascript</div>
+              <p class="articles-choice__text">
+                На каком стандарте писать скрипты, если я фрилансер
+              </p>
+            </div>
+
+            <div data-target="#three-tab" class="articles-choice__info">
+              <div class="articles-choice__subtitle">Html</div>
+              <p class="articles-choice__text">
+                Правильно вставляем картинку на сайт для Retina дисплея
+              </p>
+            </div>
+
+            <div data-target="#four-tab" class="articles-choice__info">
+              <div class="articles-choice__subtitle">Web Design</div>
+              <p class="articles-choice__text">ТОП-10 плагинов для Figma</p>
+            </div>
+            <div data-target="#five-tab" class="articles-choice__info">
+              <div class="articles-choice__subtitle">css</div>
+              <p class="articles-choice__text">
+                Возможности CSS Grid Layout , которые уже можно применять
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="id2" style="margin-bottom: 1000px">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eveniet
