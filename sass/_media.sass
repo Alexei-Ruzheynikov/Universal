@@ -13,6 +13,27 @@
             min-width: 320px
         &-info:nth-child(4)
             display: none
+    .records
+        &-wrap
+            flex-direction: column
+            align-items: center
+        &-sidebar
+            flex-direction: row
+            align-items: flex-start
+            flex-wrap: wrap
+            width: 100%
+            margin-top: 30px
+            margin-left: 113px
+            &__one, &__two
+                margin-right: 30px
+            &__one
+                max-width: 265px
+            &__two
+                max-width: 535px
+                &-main
+            &__three
+                min-width: 265px
+                margin-top: -68px  
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -105,7 +126,26 @@
         &-info
             min-width: 350px
         &-info:nth-child(3)
-            display: none        
+            display: none   
+    .records
+        &-top
+            &__two
+                margin-top: 30px
+        &-news
+            &__top
+                flex-direction: column
+                align-items: center 
+            &__bottom
+                flex-direction: column
+                align-items: center
+                &-two
+                    justify-content: center
+                    margin-top: 30px
+        &-sidebar
+            justify-content: center
+            margin-left: 35px
+            &__three
+                margin-top: 0
 @media (max-width: 767px)
     .container
         max-width: 767px
@@ -123,6 +163,17 @@
     .tall
         &-info
             min-width: 50%
+    .records
+        &-news
+            width: 0
+            &__bottom
+                // &-two
+                //     width: 650px
+                
+                &-card
+                    margin-left: 0
+                    &:nth-child(2)
+                        margin-top: 30px
 @media (max-width: 576px)
     .container
         max-width: 480px
@@ -134,7 +185,23 @@
         &-choice
             &__info:nth-child(6)
                 display: none
-
+    .records
+        &-top
+            &__one
+                max-width: 450px
+                height: 389px
+                &-image
+                    min-width: 220px
+                &-title
+                    font-size: 21px
+                    line-height: 26px
+                &-bottom
+                    width: 450px
+                    padding: 13px 35px
+        &-sidebar
+            margin-left: 0
+        &-sidebar__one, &-sidebar__two
+            margin-right: 0
 @media (max-width: 480px)
     .container
         max-width: 280px
@@ -167,3 +234,23 @@
             min-width: 100%
         &-info:nth-child(2)
             display: none  
+    .records
+        &-top
+            &__avatar
+                &-char
+                    margin-top: -18px
+                    margin-left: 20px
+            &__one
+                max-width: 280px
+                height: 457px
+                &-image
+                    min-width: 107px
+                    height: 190px
+                &-title
+                    font-size: 15px
+                &-subtitle
+                    padding-bottom: 11px
+                &-bottom
+                    width: 280px
+                    flex-direction: column
+                    align-items: flex-start
