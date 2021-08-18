@@ -1,0 +1,220 @@
+.news
+    background-color: #EDEFF0
+    &-wrap
+        display: flex
+        justify-content: flex-start
+        padding-top: 60px
+        padding-bottom: 60px
+        align-items: flex-start
+    &-papers
+        width: 848px
+        background-color: $light
+        border-radius: 10px
+    &-sidebar
+        width: 263px
+    &-paper
+        display: flex
+        position: relative
+        &:not(:last-child)::after
+            content: ''
+            width: 798px
+            height: 1px
+            background-color: #D9DADB
+            position: absolute
+            left: 25px
+            bottom: 0
+        &__tag  
+            text-transform: uppercase
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+        &:nth-child(1)
+            .news-paper__tag
+                color: #4592FF
+        &:nth-child(2)
+            .news-paper__tag
+                color: #3BBDC4
+        &:nth-child(3)
+            .news-paper__tag
+                color: #FF4F52
+        &:nth-child(4)
+            .news-paper__tag
+                color: #3BBDC4
+        &:nth-child(5)
+            .news-paper__tag
+                color: #FF4F52
+        &:nth-child(6)
+            .news-paper__tag
+                color: #AC8EE3
+                
+        &__rest
+            display: flex
+        &__top
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            &-img
+                fill: #BCBFC2
+                width: 20px
+                height: 20px
+                &_red
+                    fill: #FF4F52
+        &__info
+            padding-top: 25px
+            padding-right: 25px
+            padding-bottom: 30px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__image
+            min-width: 336px
+            height: 195px
+            margin: 25px
+        &__img
+            width: 100%
+            height: 100%
+        &__title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: #262D33
+            margin-top: -13px
+        &__subtitle
+            margin-top: 10px
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+        &__date
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #939699
+        &__commit
+            &-icon
+                fill: #BCBFC2
+                // opacity: 0.4
+                width: 15px
+                height: 15px
+                margin-left: 11px
+                margin-right: 5px
+                // position: absolute
+                // top: 326px
+                // left: 155px
+                // z-index: 5
+            &-char
+                color: #939699
+                // opacity: 0.4
+                font-family: Lato
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                // position: absolute
+                // top: 325px
+                // left: 175px
+                // z-index: 5
+        &__like
+            &-icon
+                fill: #BCBFC2
+                // opacity: 0.4
+                // position: absolute
+                // top: 325px
+                // left: 197px
+                // z-index: 5
+                width: 15px
+                height: 15px
+                margin-left: 11px
+                margin-right: 5px
+            &-char
+                font-family: Lato
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #939699
+                // opacity: 0.4
+                // position: absolute
+                // top: 325px
+                // left: 216px
+                // z-index: 5
+    &-sidebar
+        margin-left: 30px
+        background-color: #fff
+        border-radius: 10px
+        
+        &__heading
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            color: #262D33
+            text-transform: uppercase
+            padding: 20px 25px
+            position: relative
+            border-bottom: 1px solid #D9DADB
+        &__char
+            font-family: Lato;
+            font-size: 70px;
+            line-height: 50px;  
+            color: #262D33
+            opacity: 0.08
+            position: absolute
+            top: 27px
+            right: 23px 
+        &__info
+            display: flex
+            padding: 17px 25px
+            position: relative
+            &:after
+                content: ''
+                width: 213px
+                height: 1px
+                background-color: #D9DADB
+                position: absolute
+                left: 25px
+                bottom: 0
+        &__image
+            min-width: 60px
+            height: 60px
+        &__img
+            width: 100%
+            height: 100%
+        &__text
+            padding-left: 10px
+        &__title
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+        &__extra
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            margin-top: 5px
+            color: #939699
+        &__read
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: #262D33
+            text-decoration: none
+            padding: 11px 98px 14px 97px
+            display: block

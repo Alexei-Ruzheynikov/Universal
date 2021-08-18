@@ -50,4 +50,29 @@ $(document).ready(function () {
     $(activeContent).addClass("articles__paper_active");
     $(this).addClass("articles-choice__info_active");
   });
+
+  $("#paper-1").click(function () {
+    $("#paper-1").toggleClass("news-paper__top-img_red");
+    return false;
+  });
+  $("#paper-2").click(function () {
+    $("#paper-2").toggleClass("news-paper__top-img_red");
+    return false;
+  });
+  $("#paper-3").click(function () {
+    $("#paper-3").toggleClass("news-paper__top-img_red");
+    return false;
+  });
+  $("#paper-4").click(function () {
+    $("#paper-4").toggleClass("news-paper__top-img_red");
+    return false;
+  });
+  $("#paper-5").click(function () {
+    $("#paper-5").toggleClass("news-paper__top-img_red");
+    return false;
+  });
+  $("#paper-6").click(function () {
+    $("#paper-6").toggleClass("news-paper__top-img_red");
+    return false;
+  });
 });
