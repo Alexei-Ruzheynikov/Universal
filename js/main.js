@@ -75,4 +75,17 @@ $(document).ready(function () {
     $("#paper-6").toggleClass("news-paper__top-img_red");
     return false;
   });
+
+  const newspaperSwiper = new Swiper(".newspaper__slider", {
+    // Optional parameters
+    loop: true,
+
+    pagination: {
+      el: ".newspaper__pagination",
+      clickable: true,
+      bulletClass: "newspaper__pagination-bullet",
+      bulletActiveClass: "newspaper__pagination-bullet-active",
+    },
+    keyboard: true,
+  });
 });

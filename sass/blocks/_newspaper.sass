@@ -1,0 +1,241 @@
+.newspaper
+    background-color: #262D33
+    position: relative
+    z-index: 1
+    &__right
+        position: relative
+        &-bottom
+            display: flex
+            margin-top: 30px
+            &-item
+                background-color: #fff
+                margin-left: 30px
+                border-radius: 10px
+                padding: 25px 25px 30px 25px
+                max-width: 263px
+                &-title
+                    font-family: Roboto Slab
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 25px
+                    color: #262D33
+                &-subtitle
+                    font-family: Lato
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 20px
+                    color: #4B5157
+                    margin-top: 5px
+                &-date
+                    font-family: Lato
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 15px
+                    color: #939699
+                    margin-top: 10px
+        &-button
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: $light
+            position: absolute
+            bottom: 50px
+            left: 37px
+            background-color: #4592FF
+            border-radius: 20px
+            padding: 6px 28px 10px 19px
+            z-index: 14
+            &-icon
+                fill: $light
+                width: 20px
+                height: 20px
+                z-index: 21
+                position: relative
+                top: 5px
+                left: 8px
+        &-top
+            width: 555px
+            height: 370px
+            // border-radius: 10px
+            margin-left: 30px   
+            position: relative
+            &-image
+                position: absolute
+                top: 0
+                left: 0
+                z-index: -1
+                // z-index: 21
+                top: 0
+                left: 0
+                width: 555px
+                height: 370px           
+            &-img
+                background-color: #B4D1E0 
+                border-radius: 10px  
+                width: 100%
+                height: 100%
+        &-tag
+            color: #6E99AE       
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            padding-top: 35px
+            padding-left: 35px
+        &-title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 25px
+            line-height: 30px
+            max-width: 243px
+            color: #262D33
+            padding-left: 35px
+            padding-top: 20px
+        &-subtitle
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+            max-width: 239px
+            padding-left: 35px
+            padding-top: 15px 
+    &-wrap
+        display: flex
+        padding-top: 60px
+        padding-bottom: 60px
+    &__slider
+        width: 555px
+        height: 570px
+        border-radius: 10px
+    &__avatar
+        &-image
+            width: 45px
+            height: 45px
+            margin-top: 5px
+        &-img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__slide
+        position: relative
+        &-info
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-subtitle
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            opacity: 0.85
+            color: #fff
+            margin-top: 8px
+        &-metier
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            opacity: 0.4
+            color: $light
+            margin-top: 2px
+        &-title
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 50px
+            color: #fff
+            text-align: center
+            margin-top: 30px
+        &-button
+            font-family: Lato
+            font-style: normal
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: $light
+            // position: absolute
+            // bottom: 0px
+            // left: 0px
+            background-color: #4592FF
+            border-radius: 20px
+            padding: 6px 28px 10px 19px
+            z-index: 14
+            max-width: 199px
+            margin-top: 43px
+            margin-bottom: 55px
+            // text-align: center
+            &-icon
+                fill: $light
+                width: 20px
+                height: 20px
+                z-index: 21
+                position: relative
+                top: 5px
+                right: 0px
+            &-char
+                color: #C5E4FC
+                margin-left: 8px
+        &-tag
+            align-self: flex-start
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            border-radius: 3px
+            color: #fff
+            background-color: #3DC47E
+            padding: 5px 12px
+            margin-top: 18px
+            margin-left: 18px
+        &-image
+            width: 555px
+            height: 570px
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -41
+            &::after
+                content: ''
+                background-color: rgba(64, 48, 61, 0.35);
+                z-index: 1
+                width: 100%
+                height: 100% 
+                display: block
+                position: absolute
+                top: 0
+                border-radius: 10px
+        &-img
+            width: 100%
+            height: 100%
+    &__pagination
+        // background-color: red
+        // bottom: 30px
+        &-bullet
+            background-color: #D9DADB
+            width: 8px
+            height: 8px
+            display: inline-block
+            border-radius: 50%
+            &:not(:last-child)
+                margin-right: 17px
+            
+            &-active
+                background-color: #fff
+                opacity: 1
+        
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+    bottom: 46px
