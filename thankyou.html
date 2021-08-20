@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehya</title>
+    <title>Universal</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
-    <!-- <link rel="stylesheet" href="css/slick.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -25,63 +22,84 @@
       <div class="container navbar__container">
         <div class="navbar-wrap">
           <a href="index.html" class="logo">
-            <img src="img/logo.svg" alt="Logo" class="logo__image" />
+            <img src="img/logo.png" alt="Logo" class="logo__image" />
           </a>
           <div class="info navbar__info">
             <ul class="info-menu">
-              <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="index.html#id1" class="info-menu__link"
-                  >Рекомендации</a
-                >
+              <li class="info-menu__item">
+                <a href="#id1" class="info-menu__link">Статьи</a>
               </li>
-              <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="index.html#id2" class="info-menu__link">Книги</a>
+              <li class="info-menu__item">
+                <a href="#id2" class="info-menu__link">Новости</a>
               </li>
-              <li class="info-menu__item info-menu__item_mobile-hidden">
-                <a href="index.html#id3" class="info-menu__link">Блог</a>
+              <li class="info-menu__item">
+                <a href="#id3" class="info-menu__link">Горячее</a>
               </li>
-            </ul>
-            <button
-              data-toggle="modal"
-              data-href=".info-modal"
-              class="button info__button"
-            >
-              Получить
-            </button>
-            <button class="button navbar__button">
-              <span class="button__line"></span
-              ><span class="button__line"></span
-              ><span class="button__line"></span>
-            </button>
-            <ul class="info-menu info-menu_mobile">
-              <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="index.html#id4" class="info-menu__link"
-                  >Рекомендации</a
-                >
+              <li class="info-menu__item">
+                <a href="#id4" class="info-menu__link">HTML</a>
               </li>
-              <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="index.html#id5" class="info-menu__link">Книги</a>
+              <li class="info-menu__item">
+                <a href="#id5" class="info-menu__link">CSS</a>
               </li>
-              <li class="info-menu__item info-menu__item_mobile-visible">
-                <a href="index.html#id6" class="info-menu__link">Блог</a>
+              <li class="info-menu__item">
+                <a href="#id6" class="info-menu__link">JavaScript</a>
               </li>
-              <li class="info-menu__item info-menu__item_mobile-visible">
-                <button
-                  data-toggle="modal"
-                  data-href=".info-modal"
-                  class="
-                    button
-                    info-menu__button info-menu__button_mobile-visible
-                  "
-                >
-                  Получить
-                </button>
+              <li class="info-menu__item">
+                <a href="#id7" class="info-menu__link">Web Design</a>
               </li>
             </ul>
           </div>
+          <button
+            data-toggle="modal"
+            data-href=".info-modal"
+            class="button button_info"
+          >
+            Оставить заявку
+          </button>
+          <button class="button navbar__button">
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+          </button>
+          <ul class="info-menu info-menu_mobile">
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id1" class="info-menu__link">Статьи</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id2" class="info-menu__link">Новости</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id3" class="info-menu__link">Горячее</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id4" class="info-menu__link">HTML</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id5" class="info-menu__link">CSS</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id6" class="info-menu__link">JavaScript</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <a href="index.html#id7" class="info-menu__link">Web Design</a>
+            </li>
+            <li class="info-menu__item info-menu__item_mobile-visible">
+              <button
+                data-toggle="modal"
+                data-href=".info-modal"
+                class="
+                  button
+                  info-menu__button info-menu__button_mobile-visible
+                "
+              >
+                Оставить заявку
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
+
     <section class="thanks">
       <div class="container">
         <h1 class="thanks__title">Сообщение отправлено!</h1>
@@ -93,141 +111,171 @@
         >
       </div>
     </section>
+
     <section class="footer">
       <div class="container">
         <div class="footer-wrap">
-          <div class="footer__main">
-            <a href="index.html" class="footer-logo">
-              <img src="img/logo.svg" alt="Logo" class="footer-logo__image" />
-            </a>
-            <div class="footer__subtitle">
-              Создайте современный и<br />
-              креативный веб-сайт с crealand
-            </div>
-            <div class="footer__social-network">
-              <a
-                target="_blank"
-                href="https://mail.google.com"
-                class="footer__link"
-              >
-                <svg class="footer__icon">
-                  <use xlink:href="img/sprite.svg#google"></use>
-                </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://twitter.com"
-                class="footer__link"
-              >
-                <svg class="footer__icon">
-                  <use xlink:href="img/sprite.svg#twiter"></use>
-                </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/"
-                class="footer__link"
-              >
-                <svg class="footer__icon">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com"
-                class="footer__link"
-              >
-                <svg class="footer__icon">
-                  <use xlink:href="img/sprite.svg#in"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
           <div class="footer__navigation">
-            <div class="footer__list footer__product">
-              <h3 class="footer__title footer__title_product">Продукт</h3>
-              <ul class="footer__ul">
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Лэндинг</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref"></a
-                  ><a href="#" class="footer__ref">Функции</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref"></a
-                  ><a href="#" class="footer__ref">Документация</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref"></a
-                  ><a href="#" class="footer__ref">Скидки</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref"></a
-                  ><a href="#" class="footer__ref">Расценки</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__list footer__service">
-              <h3 class="footer__title footer__title_service">Сервисы</h3>
-              <ul class="footer__ul">
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Документация</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Дизайн</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Темы</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Илюстрации</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">UI Kit</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__list footer__company">
-              <h3 class="footer__title footer__title_company">Компания</h3>
-              <ul class="footer__ul">
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">О нас</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Условия</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Privacy Policy</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Careers</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__list footer__yet">
-              <h3 class="footer__title footer__title_yet">Еще..</h3>
-              <ul class="footer__ul">
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Документация</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Лицензия</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__ref">Изменения</a>
-                </li>
-              </ul>
-            </div>
+            <h3 class="footer__title">Новости</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Обновления</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Экспресс</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Politics</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Solar Eclipse</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__navigation">
+            <h3 class="footer__title">Статьи</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">HTML</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">CSS</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">JavaScript</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Web Design</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__navigation">
+            <h3 class="footer__title">Видеоуроки</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Скринкасты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Уроки</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Вебинары</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__navigation">
+            <h3 class="footer__title">Курсы</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Платные интенсивы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Бесплатные стримы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Мастер-классы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Менторство</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Буткемпы</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__navigation">
+            <h3 class="footer__title">Информация</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Политика данных</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Оферта сайта</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Реквизиты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__navigation">
+            <h3 class="footer__title">Категории</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Популярное</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Горячее</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Подборки</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Мнения</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Карьера</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer__bottom">
-          <a href="index.html" class="footer__links">
-            <svg class="footer__icons">
-              <use xlink:href="img/sprite.svg#heart"></use>
-            </svg>
-          </a>
-          <div class="footer__text">Copyright © 2019. Crafted with love.</div>
+        <div class="footer__info">
+          <div class="footer__menu">
+            <div class="footer__logo-image">
+              <svg class="footer__logo-icon">
+                <use xlink:href="img/sprite.svg#logo-2"></use>
+              </svg>
+            </div>
+            <ul class="footer__nav">
+              <li class="footer__roster">
+                <a href="#" class="footer__ref">Контакты</a>
+              </li>
+              <li class="footer__roster">
+                <a href="#" class="footer__ref">Работа у нас</a>
+              </li>
+              <li class="footer__roster">
+                <a href="#" class="footer__ref">Реклама</a>
+              </li>
+              <li class="footer__roster">
+                <a href="#" class="footer__ref">Обратная связь</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__social">
+            <a href="#" class="footer__social-image">
+              <img src="img/fb-2.png" alt="" class="footer__social-img" />
+            </a>
+
+            <a href="#" class="footer__social-image">
+              <img src="img/tw-2.png" alt="" class="footer__social-img" />
+            </a>
+
+            <a href="#" class="footer__social-image">
+              <img src="img/yt-2.png" alt="" class="footer__social-img" />
+            </a>
+
+            <a href="#" class="footer__social-image">
+              <img src="img/in.png" alt="" class="footer__social-img" />
+            </a>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-text">
+            Universal — это онлайн издание, в котором мы публикуем полезные
+            материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+            ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.
+          </div>
+          <div class="footer__copyright-copy">© 2020 Universal Magazine</div>
         </div>
       </div>
     </section>
@@ -283,22 +331,9 @@
       </div>
       <!-- /.modal__dialog -->
     </div>
-    <!-- /.modal -->
-    <div id="toTop">
-      <svg class="to-top">
-        <use xlink:href="img/sprite.svg#icon-top"></use>
-      </svg>
-    </div>
-    <!-- <div class="circle">
-      <div class="circle__left"></div>
-      <div class="circle__right"></div>
-    </div> -->
+
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
-    <!-- <script src="js/slick.js"></script> -->
-    <script defer src="js/owl.carousel.min.js"></script>
-    <script defer src="js/owl2row.js"></script>
-    <script defer src="js/jquery.fancybox.min.js"></script>
     <script defer src="js/jquery.mask.min.js"></script>
     <script defer src="js/jquery.validate.min.js"></script>
     <script defer src="js/main.js"></script>
