@@ -8,7 +8,8 @@ https://universal.mainweb-planet.ru/
 
 # Используемые технологии, плагины:
 
-html, css3, flexbox, javascript, jQuery,
+html, css3 (flexbox, sass), javascript, jQuery, БЭМ;
+Slick слайдер, phpmailer, mask (маска телефона), validate (валидация форм).
 
 # Разработаные блоки и реализованные возможности сайта:
 
