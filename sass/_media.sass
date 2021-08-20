@@ -128,8 +128,9 @@
         &-choice
             display: flex
             justify-content: space-between
+            min-width: 100%
             &__info
-                min-width: 130px
+                // min-width: 140px
             &__title
                 display: none
             &__text
@@ -138,6 +139,11 @@
             &__subtitle
                 padding-left: 10px
                 padding-right: 10px
+        &-image
+            &__img
+                border-radius: 0
+            &::after
+                border-radius: 0 
     .tall
         &-info
             min-width: 350px
@@ -190,6 +196,11 @@
             width: 33%     
     .thanks
         margin-top: 60px
+    .articles
+        &::before
+            height: 313px
+        &:after
+            top: -29px
 @media (max-width: 767px)
     .container
         max-width: 767px
@@ -197,11 +208,17 @@
         overflow-x: hidden
 
     .articles
+        &::before
+            height: 363px
         &-wrap
             margin-top: 30px
         &-image
 
         &-choice
+            &__info:nth-child(6)
+                display: none
+            &__info:nth-child(5)
+                display: none
             &__info
                 min-width: 100px
     .tall
@@ -256,8 +273,12 @@
             font-size: 35px
             line-height: 45px
         &-choice
-            &__info:nth-child(6)
+            &__text
+                max-width: 200px
+            &__info:nth-child(4)
                 display: none
+        &-wrap
+            min-width: 435px
     .records
         &-top
             &__one
@@ -312,6 +333,8 @@
     .articles
         &-choice
             &__info:nth-child(5)
+                display: none
+            &__info:nth-child(3)
                 display: none
         &-image
             height: 460px
