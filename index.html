@@ -49,7 +49,8 @@
               </li>
             </ul>
           </div>
-          <button class="button button_info">Оставить заявку</button>
+          <button data-toggle="modal"
+              data-href=".info-modal" class="button button_info">Оставить заявку</button>
 
           <button class="button navbar__button">
             <span class="button__line"></span>
@@ -79,7 +80,8 @@
               <a href="#id7" class="info-menu__link">Web Design</a>
             </li>
             <li class="info-menu__item info-menu__item_mobile-visible">
-              <button
+              <button data-toggle="modal"
+              data-href=".info-modal"
                 class="
                   button
                   info-menu__button info-menu__button_mobile-visible
@@ -980,7 +982,8 @@
       <div class="container">
         <div class="subscribe__wrap">
           <div class="subscribe__title">Подпишитесь на нашу рассылку</div>
-          <form action="#" class="subscribe__subscription">
+          <form action="send.php"
+            method="POST" class="subscribe__subscription">
             <input type="email" class="subscribe__input" placeholder="Email" name="email">
             <button class="button subscribe__button">Подписаться</button>
           </form>
@@ -1098,9 +1101,64 @@ Universal — это онлайн издание, в котором мы пуб�
         </div>
       </div>
     </section>
+
+    
+   <div class="modal info-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title">Получить</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              name="name"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Ввведите номер*"
+              name="phone"
+              minlength="18"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Введите email*"
+              name="emailstwo"
+              required
+            />
+          </div>
+          <!-- <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea> -->
+          <div class="modal__block">
+            <button class="button modal__button">Отправить</button>
+            <span class="modal__info">* Обязательное поле</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
     
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src='js/swiper-bundle.min.js'></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
     <script defer src="js/main.js"></script>
   </body>
 </html>

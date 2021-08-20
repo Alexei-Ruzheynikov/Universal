@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehya</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- <link rel="stylesheet" href="css/slick.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar_fixed">
+      <div class="container navbar__container">
+        <div class="navbar-wrap">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="Logo" class="logo__image" />
+          </a>
+          <div class="info navbar__info">
+            <ul class="info-menu">
+              <li class="info-menu__item info-menu__item_mobile-hidden">
+                <a href="index.html#id1" class="info-menu__link"
+                  >Рекомендации</a
+                >
+              </li>
+              <li class="info-menu__item info-menu__item_mobile-hidden">
+                <a href="index.html#id2" class="info-menu__link">Книги</a>
+              </li>
+              <li class="info-menu__item info-menu__item_mobile-hidden">
+                <a href="index.html#id3" class="info-menu__link">Блог</a>
+              </li>
+            </ul>
+            <button
+              data-toggle="modal"
+              data-href=".info-modal"
+              class="button info__button"
+            >
+              Получить
+            </button>
+            <button class="button navbar__button">
+              <span class="button__line"></span
+              ><span class="button__line"></span
+              ><span class="button__line"></span>
+            </button>
+            <ul class="info-menu info-menu_mobile">
+              <li class="info-menu__item info-menu__item_mobile-visible">
+                <a href="index.html#id4" class="info-menu__link"
+                  >Рекомендации</a
+                >
+              </li>
+              <li class="info-menu__item info-menu__item_mobile-visible">
+                <a href="index.html#id5" class="info-menu__link">Книги</a>
+              </li>
+              <li class="info-menu__item info-menu__item_mobile-visible">
+                <a href="index.html#id6" class="info-menu__link">Блог</a>
+              </li>
+              <li class="info-menu__item info-menu__item_mobile-visible">
+                <button
+                  data-toggle="modal"
+                  data-href=".info-modal"
+                  class="
+                    button
+                    info-menu__button info-menu__button_mobile-visible
+                  "
+                >
+                  Получить
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="thanks">
+      <div class="container">
+        <h1 class="thanks__title">Сообщение отправлено!</h1>
+        <div class="thanks__subtitle">
+          Наш менеджер перезвонит вам через 5 минут.
+        </div>
+        <a class="thanks__button button" href="index.html"
+          >Вернуться на главную</a
+        >
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer__main">
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo.svg" alt="Logo" class="footer-logo__image" />
+            </a>
+            <div class="footer__subtitle">
+              Создайте современный и<br />
+              креативный веб-сайт с crealand
+            </div>
+            <div class="footer__social-network">
+              <a
+                target="_blank"
+                href="https://mail.google.com"
+                class="footer__link"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#google"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://twitter.com"
+                class="footer__link"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#twiter"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="footer__link"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com"
+                class="footer__link"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__navigation">
+            <div class="footer__list footer__product">
+              <h3 class="footer__title footer__title_product">Продукт</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Лэндинг</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref"></a
+                  ><a href="#" class="footer__ref">Функции</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref"></a
+                  ><a href="#" class="footer__ref">Документация</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref"></a
+                  ><a href="#" class="footer__ref">Скидки</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref"></a
+                  ><a href="#" class="footer__ref">Расценки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list footer__service">
+              <h3 class="footer__title footer__title_service">Сервисы</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Документация</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Дизайн</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Темы</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Илюстрации</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">UI Kit</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list footer__company">
+              <h3 class="footer__title footer__title_company">Компания</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">О нас</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Условия</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list footer__yet">
+              <h3 class="footer__title footer__title_yet">Еще..</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Документация</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Лицензия</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__ref">Изменения</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a href="index.html" class="footer__links">
+            <svg class="footer__icons">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+          </a>
+          <div class="footer__text">Copyright © 2019. Crafted with love.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal info-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title">Получить</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              name="name"
+              minlength="2"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Ввведите номер*"
+              name="phone"
+              minlength="18"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Введите email*"
+              name="emailstwo"
+              required
+            />
+          </div>
+          <!-- <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea> -->
+          <div class="modal__block">
+            <button class="button modal__button">Отправить</button>
+            <span class="modal__info">* Обязательное поле</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div id="toTop">
+      <svg class="to-top">
+        <use xlink:href="img/sprite.svg#icon-top"></use>
+      </svg>
+    </div>
+    <!-- <div class="circle">
+      <div class="circle__left"></div>
+      <div class="circle__right"></div>
+    </div> -->
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="js/slick.js"></script> -->
+    <script defer src="js/owl.carousel.min.js"></script>
+    <script defer src="js/owl2row.js"></script>
+    <script defer src="js/jquery.fancybox.min.js"></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
