@@ -172,6 +172,21 @@
         width: 357px
     .news-sidebar__info:after
         width: 209px
+    .footer
+        &__roster     
+            &:not(:first-child)
+                .footer__ref
+                    padding-left: 15px
+        &__ref
+            font-size: 13px    
+        &__social
+            &-image
+                width: 30px
+                height: 30px   
+        &-wrap
+            flex-wrap: wrap
+        &__navigation
+            width: 33%     
 @media (max-width: 767px)
     .container
         max-width: 767px
@@ -224,6 +239,11 @@
             line-height: 35px
         &__input
             width: 230px
+    .footer
+        &__info
+            flex-wrap: wrap
+        &__social
+            margin-top: 20px
 @media (max-width: 576px)
     .container
         max-width: 480px
@@ -273,6 +293,15 @@
                 &-image
                     width: 438px
                     height: 310px
+    .footer
+        &__menu
+            flex-wrap: wrap
+        &__copyright
+            flex-wrap: wrap
+            &-copy
+                margin-top: 10px
+        &__social
+            margin-top: 0px
 @media (max-width: 480px)
     .container
         max-width: 280px
@@ -375,3 +404,14 @@
             align-items: center
         &__button
             margin-top: 25px
+    .footer
+        &__navigation
+            width: 50%  
+        &__nav
+            display: flex
+            flex-wrap: wrap
+        &__roster
+            width: 50%
+            &:nth-child(3)
+                .footer__ref
+                    padding-left: 0px
