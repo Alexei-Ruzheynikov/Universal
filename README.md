@@ -11,7 +11,7 @@ https://universal.mainweb-planet.ru/
 html, css3 (flexbox, sass), javascript, jQuery, БЭМ;
 Slick слайдер, phpmailer, mask (маска телефона), validate (валидация форм).
 
-# Разработаные блоки и реализованные возможности сайта:
+# Разработанные блоки и реализованные возможности сайта:
 
 Меню(шапка);
 1 секция - табы;
