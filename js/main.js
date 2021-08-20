@@ -1,35 +1,41 @@
 $(document).ready(function () {
+  //Скролл
   $(".navbar .navbar__container .navbar-wrap ul li a").click(function () {
     var element = $(this).attr("href");
-    var dist = $(element).offset().top - 60;
-    $("html, body").animate({ scrollTop: dist }, 1000);
-    return false;
+    if ($(window).width() < 992) {
+      var dist = $(element).offset().top - 61;
+      $("html, body").animate({ scrollTop: dist }, 1000);
+      return false;
+    } else {
+      var dist = $(element).offset().top;
+
+      $("html, body").animate({ scrollTop: dist }, 1000);
+      return false;
+    }
   });
 
-  //   $(window).scroll(function () {
-  //     if ($(this).scrollTop() != 0) {
-  //       $("#toTop").fadeIn();
-  //     } else {
-  //       $("#toTop").fadeOut();
-  //     }
-  //   });
-  //   $("#toTop").click(function () {
-  //     $("body,html").animate({ scrollTop: 0 }, 800);
-  //   });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() != 0) {
+  //     $("#toTop").fadeIn();
+  //   } else {
+  //     $("#toTop").fadeOut();
+  //   }
+  // });
+  // $("#toTop").click(function () {
+  //   $("body,html").animate({ scrollTop: 0 }, 800);
+  // });
 
-  //   $(window).scroll(function () {
-  //     $("section[id]").each(function () {
-  //       var id = $(this).attr("id");
-  //       if ($(this).offset().top - 121 < $(window).scrollTop()) {
-  //         $(".navbar .navbar__container .navbar-wrap ul li a").removeClass(
-  //           "active"
-  //         );
-  //         $(
-  //           '.header .navbar__container .navbar-wrap ul li a[href="#' + id + '"]'
-  //         ).addClass("active");
-  //       }
-  //     });
-  //   });
+  $(window).scroll(function () {
+    $("section[id]").each(function () {
+      var id = $(this).attr("id");
+      if ($(this).offset().top - 100 < $(window).scrollTop()) {
+        $(".navbar .navbar-wrap ul li a").removeClass("info-menu__link-active");
+        $('.navbar .navbar-wrap ul li a[href="#' + id + '"]').addClass(
+          "info-menu__link-active"
+        );
+      }
+    });
+  });
 
   var menuButton = $(".navbar__button");
   menuButton.on("click", function () {
